@@ -1,0 +1,7 @@
+# Empêche l'indexation de toute zone sensible
+User-agent: *
+Disallow: /dl-console-jsvmtmyq8s5z.html
+Disallow: /assets/admin.js
+Disallow: /assets/supabase-config.js
+
+# Pas de sitemap, panel admin pas référencé nulle part

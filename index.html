@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Dorian Lecomte — Ingénieur en Sciences du Numérique, Réseaux, Systèmes & Cybersécurité</title>
+<meta name="description" content="Portfolio de Dorian Lecomte, étudiant ingénieur CESI orienté Sciences du Numérique, Réseaux, Systèmes d'Information et Cybersécurité. Lab personnel TryHackMe & Hack The Box, projets, certifications." />
+<meta name="author" content="Dorian Lecomte" />
+<meta name="theme-color" content="#0A0B0F" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Dorian Lecomte — Ingénieur Sciences du Numérique, Réseaux & Cybersécurité" />
+<meta property="og:description" content="Étudiant ingénieur CESI, orienté cybersécurité. Lab personnel TryHackMe & Hack The Box, projets réseaux et systèmes." />
+<meta property="og:locale" content="fr_FR" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230A0B0F'/><path d='M8 10h6a4 4 0 0 1 0 8H8z M8 18l8 6' stroke='%235EE6D0' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>" />
+
+<link rel="stylesheet" href="assets/style.css" />
+<link rel="stylesheet" href="assets/admin.css" />
+</head>
+<body>
+
+<canvas class="bg-particles" id="bgCanvas" aria-hidden="true"></canvas>
+
+<!-- HEADER -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Accueil">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5L12 4l9 7.5"/><path d="M5 10.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9.5"/></svg></span>
+      <span class="brand-meta">
+        <span class="name" id="brandName">Dorian Lecomte</span>
+        <span class="role">Systèmes · Réseaux · Cybersécurité</span>
+      </span>
+    </a>
+
+    <nav class="menu" aria-label="Navigation principale">
+      <a href="#about"><span class="num">01</span>À propos</a>
+      <a href="#parcours"><span class="num">02</span>Parcours</a>
+      <a href="#lab"><span class="num">03</span>Cyber lab</a>
+      <a href="#certifications"><span class="num">04</span>Diplômes</a>
+      <a href="#projets"><span class="num">05</span>Projets</a>
+      <a href="#contact"><span class="num">06</span>Contact</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="btn primary" href="#contact"><span class="lbl">Me contacter</span>
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <button class="icon-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <a href="#about"><span class="num">01</span>À propos</a>
+    <a href="#parcours"><span class="num">02</span>Parcours</a>
+    <a href="#lab"><span class="num">03</span>Cyber lab</a>
+    <a href="#certifications"><span class="num">04</span>Diplômes</a>
+    <a href="#projets"><span class="num">05</span>Projets</a>
+    <a href="#contact"><span class="num">06</span>Contact</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-left">
+      <div class="pre"><span class="status-dot" aria-hidden="true"></span><span id="availabilityLine">Disponible · Stage / Opportunités</span></div>
+      <h1>
+        <span id="heroName">Dorian Lecomte</span><span class="slash">.</span><br/>
+        Étudiant ingénieur<br/>
+        <span class="accent">Sciences du Numérique,<br/>Réseaux, Systèmes & Cybersécurité</span>
+      </h1>
+
+      <div class="ctas">
+        <a class="btn primary" href="#projets">Voir mes projets
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a class="btn" href="#contact">Me contacter</a>
+        <a class="btn ghost" id="cvLink" href="#" download>
+          Télécharger le CV
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+        </a>
+      </div>
+
+      <div class="socials">
+        <a class="btn ghost" id="ghLink" href="#" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.18c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.72-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.92 10.92 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.7 5.39-5.27 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.68.8.56C20.21 21.39 23.5 17.07 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+          GitHub
+        </a>
+        <a class="btn ghost" id="liLink" href="#" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </a>
+        <a class="btn ghost" id="thmLink" href="#" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l4-4 4 4-4 4-4-4zM13 8h8M13 12h8M13 16h5"/></svg>
+          TryHackMe
+        </a>
+        <a class="btn ghost" id="htbLink" href="#" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L3 7v6c0 5 4 9 9 10 5-1 9-5 9-10V7l-9-5z"/></svg>
+          Hack The Box
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <span class="hero-right-label mono muted">// introduction</span>
+      <p class="lead" id="heroLead">
+        Actuellement en deuxième année de cycle préparatoire intégré à <strong>CESI École d'Ingénieurs</strong>, spécialité Informatique. Je construis ma trajectoire vers le métier d'<strong>ingénieur en Sciences du Numérique, Réseaux, Systèmes d'Information et Cybersécurité</strong>, en combinant rigueur académique et apprentissage autodidacte sur TryHackMe et Hack The Box.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="left">
+        <span class="eyebrow"><span class="dot"></span>01 / À propos</span>
+        <h2>Mon profil.</h2>
+      </div>
+    </div>
+
+    <div class="about-grid">
+      <div class="prose">
+        <p>Je suis actuellement en <strong>deuxième année de cycle préparatoire intégré</strong> à <strong>CESI École d'Ingénieurs</strong>, dans la spécialité <strong>Informatique</strong>. Cette formation me donne des bases scientifiques et techniques solides, et me prépare au cycle ingénieur orienté <strong>Sciences du Numérique, Réseaux, Systèmes d'Information et Cybersécurité</strong>.</p>
+        <p>En parallèle, je m'investis en autodidacte sur des plateformes spécialisées comme <strong>TryHackMe</strong> et <strong>Hack The Box</strong>, où je m'exerce à l'analyse de vulnérabilités, au pentest, à l'administration et au durcissement des systèmes. C'est ce travail régulier qui me permet de progresser sur la durée et de transformer la curiosité en compétences réelles.</p>
+        <p>Ce qui m'anime : comprendre <strong>comment les choses fonctionnent</strong>, comprendre <strong>comment elles cassent</strong>, et apprendre à les rendre robustes. Je cherche aujourd'hui une opportunité — stage ou expérience technique — pour ancrer cet apprentissage dans un environnement professionnel exigeant.</p>
+      </div>
+
+      <aside class="portrait">
+        <div class="portrait-frame">
+          <div class="portrait-img" id="portraitImg" role="img" aria-label="Photo de Dorian Lecomte">
+            <!-- Photo à fournir : remplacer le contenu de cette div par <img src="assets/photo.jpg" alt="Dorian Lecomte"/> -->
+            <svg viewBox="0 0 200 200" width="100%" height="100%" aria-hidden="true">
+              <defs>
+                <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="var(--accent)" stop-opacity=".5"/>
+                  <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <rect width="200" height="200" fill="url(#pg)"/>
+              <circle cx="100" cy="80" r="32" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity=".7"/>
+              <path d="M40 180 Q40 130 100 130 Q160 130 160 180" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity=".7"/>
+              <text x="100" y="195" text-anchor="middle" fill="var(--text-muted)" font-family="JetBrains Mono" font-size="9" letter-spacing="0.15em">PHOTO À VENIR</text>
+            </svg>
+          </div>
+          <span class="portrait-tag mono">// dorian_lecomte.jpg</span>
+        </div>
+        <ul class="quick-facts">
+          <li><span class="k">Statut</span><span class="v">Étudiant ingénieur · 2ᵉ année</span></li>
+          <li><span class="k">École</span><span class="v">CESI École d'Ingénieurs</span></li>
+          <li><span class="k">Mineure</span><span class="v">Informatique</span></li>
+          <li><span class="k">Recherche</span><span class="v">Stage / Opportunités</span></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- PARCOURS -->
+<section id="parcours">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="left">
+        <span class="eyebrow"><span class="dot"></span>02 / Parcours</span>
+        <h2>Mon parcours.</h2>
+      </div>
+    </div>
+
+    <div id="timeline" class="timeline" role="list"></div>
+  </div>
+</section>
+
+<!-- CYBER LAB — TryHackMe & Hack The Box -->
+<section id="lab">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="left">
+        <span class="eyebrow"><span class="dot"></span>03 / Cyber lab personnel</span>
+        <h2>Apprentissage autodidacte, en continu.</h2>
+        <p class="desc">Hors cours, je travaille régulièrement sur TryHackMe et Hack The Box pour consolider mes bases en attaque et défense. Statistiques, badges et certifications obtenues sur ces plateformes sont rassemblés ici.</p>
+      </div>
+      <div class="right">
+        <a class="btn ghost" id="thmCardLink" href="#" target="_blank" rel="noopener">Profil TryHackMe ↗</a>
+        <a class="btn ghost" id="htbCardLink" href="#" target="_blank" rel="noopener">Profil Hack The Box ↗</a>
+      </div>
+    </div>
+
+    <div class="lab-grid">
+      <article class="platform" aria-label="TryHackMe">
+        <span class="corner" aria-hidden="true"></span>
+        <div class="platform-head">
+          <div class="platform-logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></svg>
+          </div>
+          <div>
+            <div class="platform-name">TryHackMe</div>
+            <div class="platform-handle" id="thmHandle">@NyxLec</div>
+          </div>
+          <span class="platform-flag" id="thmFlag">Top 5%</span>
+        </div>
+        <div class="platform-stats" id="thmStats"></div>
+        <div class="platform-foot">
+          <a class="link" id="thmFootLink" href="#" target="_blank" rel="noopener">Voir le profil
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="platform" aria-label="Hack The Box">
+        <span class="corner" aria-hidden="true"></span>
+        <div class="platform-head">
+          <div class="platform-logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v6c0 4.5-3.5 8.5-8 9-4.5-.5-8-4.5-8-9V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <div>
+            <div class="platform-name">Hack The Box</div>
+            <div class="platform-handle" id="htbHandle">@NyxLec</div>
+          </div>
+          <span class="platform-flag" id="htbFlag">À venir</span>
+        </div>
+        <div class="platform-stats" id="htbStats"></div>
+        <div class="platform-foot">
+          <a class="link" id="htbFootLink" href="#" target="_blank" rel="noopener">Voir le profil
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Certifications plateformes (THM + HTB Academy) -->
+    <h3 class="mono muted sub-h">// certifications &amp; badges plateformes</h3>
+    <div class="cert-grid" id="certPlatformsGrid"></div>
+  </div>
+</section>
+
+<!-- DIPLÔMES & CERTIFICATIONS -->
+<section id="certifications">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="left">
+        <span class="eyebrow"><span class="dot"></span>04 / Diplômes & Certifications</span>
+        <h2>Preuves de compétences vérifiables.</h2>
+        <p class="desc">Chaque ligne renvoie au certificat ou au badge officiel correspondant lorsqu'il est disponible publiquement (Cisco NetAcad, CNIL, Credly).</p>
+      </div>
+    </div>
+
+    <h3 class="mono muted sub-h">// diplômes</h3>
+    <div class="cert-grid" id="diplomesGrid"></div>
+
+    <div class="divider"></div>
+
+    <h3 class="mono muted sub-h">// certifications réseaux & systèmes</h3>
+    <div class="cert-grid" id="certNetGrid"></div>
+
+    <div class="divider"></div>
+
+    <h3 class="mono muted sub-h">// programmation</h3>
+    <div class="cert-grid" id="certCodeGrid"></div>
+
+    <div class="divider"></div>
+
+    <h3 class="mono muted sub-h">// gouvernance & rgpd</h3>
+    <div class="cert-grid" id="certGovGrid"></div>
+  </div>
+</section>
+
+<!-- PROJETS — onglets perso / acad -->
+<section id="projets">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="left">
+        <span class="eyebrow"><span class="dot"></span>05 / Projets</span>
+        <h2>Travaux concrets, perso et académiques.</h2>
+        <p class="desc">Distinction explicite entre les expérimentations menées sur mon temps personnel et les projets réalisés dans le cadre de la formation CESI.</p>
+      </div>
+      <div class="right">
+        <div class="proj-tabs" role="tablist">
+          <button class="active" data-tab="perso" role="tab">Personnels<span class="num" id="countPerso">·0</span></button>
+          <button data-tab="acad" role="tab">Académiques<span class="num" id="countAcad">·0</span></button>
+        </div>
+      </div>
+    </div>
+
+    <div id="projPerso" class="proj-list" data-cols="perso"></div>
+    <div id="projAcad" class="proj-list" data-cols="acad" hidden></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <span class="eyebrow"><span class="dot"></span>06 / Contact</span>
+        <h2 style="margin-top:14px">Discutons d'une collaboration.</h2>
+        <p class="lead">Je suis ouvert à toute opportunité de stage ou d'expérience technique dans les domaines des réseaux, des systèmes d'information et de la cybersécurité. Réponse rapide, échanges directs.</p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="field-row">
+            <label class="field">
+              <span class="field-label mono">// nom</span>
+              <input type="text" name="name" id="cfName" required maxlength="100" autocomplete="name" placeholder="Votre nom" />
+            </label>
+            <label class="field">
+              <span class="field-label mono">// email</span>
+              <input type="email" name="email" id="cfEmail" required maxlength="200" autocomplete="email" placeholder="vous@exemple.com" />
+            </label>
+          </div>
+          <label class="field">
+            <span class="field-label mono">// sujet</span>
+            <input type="text" name="subject" id="cfSubject" maxlength="200" placeholder="Stage, opportunité, question…" />
+          </label>
+          <label class="field">
+            <span class="field-label mono">// message</span>
+            <textarea name="body" id="cfBody" required maxlength="5000" rows="6" placeholder="Bonjour Dorian,…"></textarea>
+            <span class="field-counter mono" id="cfCounter">0 / 5000</span>
+          </label>
+
+          <!-- Honeypot anti-bot : ne doit jamais être rempli par un humain -->
+          <div class="hp-field" aria-hidden="true">
+            <label>Si vous êtes humain, laissez ce champ vide
+              <input type="text" name="website" id="cfHoneypot" tabindex="-1" autocomplete="off" />
+            </label>
+          </div>
+
+          <div class="contact-actions">
+            <button type="submit" class="btn primary" id="cfSubmit">
+              <span class="lbl">Envoyer le message</span>
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </button>
+            <a class="btn" id="contactLi" href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a class="btn ghost" id="contactGh" href="#" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+
+          <div class="form-status" id="cfStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+      <div class="contact-card">
+        <div class="row"><span class="k">Email</span><span class="v"><a id="cEmail" href="#"></a></span></div>
+        <div class="row"><span class="k">LinkedIn</span><span class="v"><a id="cLi" href="#" target="_blank" rel="noopener">/in/dorian-lecomte</a></span></div>
+        <div class="row"><span class="k">GitHub</span><span class="v"><a id="cGh" href="#" target="_blank" rel="noopener">@Nyxlec</a></span></div>
+        <div class="row"><span class="k">TryHackMe</span><span class="v"><a id="cThm" href="#" target="_blank" rel="noopener">@NyxLec</a></span></div>
+        <div class="row"><span class="k">Hack The Box</span><span class="v"><a id="cHtb" href="#" target="_blank" rel="noopener">profil</a></span></div>
+        <div class="row"><span class="k">Statut</span><span class="v" style="color:var(--success)">● Disponible</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-inner">
+    <div>© <span id="year"></span> Dorian Lecomte — Conçu et développé avec rigueur.</div>
+    <div class="mono">v1.1 · build <span id="buildHash">000-stable</span></div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="assets/supabase-config.js"></script>
+<script src="assets/config.js"></script>
+<script src="assets/script.js"></script>
+<script src="assets/contact.js"></script>
+</body>
+</html>

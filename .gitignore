@@ -1,0 +1,29 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Variables d'environnement (ne JAMAIS push)
+.env
+.env.local
+.env.production
+*.secret
+
+# Dépendances (si jamais tu ajoutes node)
+node_modules/
+package-lock.json
+
+# Build
+dist/
+build/
